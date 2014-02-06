@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a37e1fd8-0793-42aa-9857-ade736979f4a" name="Default" comment="" />
+    <list default="true" id="a37e1fd8-0793-42aa-9857-ade736979f4a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ActivityLab.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,7 +82,7 @@
       <file leaf-file-name="ActivityOne.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2135" selection-end="2179" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="2592">
+            <state line="151" column="5" selection-start="3900" selection-end="3900" vertical-scroll-proportion="0.0" vertical-offset="1850" max-vertical-offset="2544">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1384#1843#0" expanded="true" />
@@ -89,7 +95,7 @@
       <file leaf-file-name="ActivityTwo.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="16" selection-start="2630" selection-end="2630" vertical-scroll-proportion="-0.015873017" vertical-offset="1834" max-vertical-offset="2496">
+            <state line="8" column="31" selection-start="243" selection-end="243" vertical-scroll-proportion="0.05079365" vertical-offset="0" max-vertical-offset="2384">
               <folding />
             </state>
           </provider>
@@ -667,7 +673,7 @@
     <option name="width" value="1280" />
     <option name="height" value="775" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -809,7 +815,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Android Logcat" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -948,6 +954,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a37e1fd8-0793-42aa-9857-ade736979f4a" name="Default" comment="" />
@@ -1059,7 +1082,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2135" selection-end="2179" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="2592">
+        <state line="151" column="5" selection-start="3900" selection-end="3900" vertical-scroll-proportion="0.0" vertical-offset="1850" max-vertical-offset="2544">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1384#1843#0" expanded="true" />
@@ -1070,7 +1093,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="16" selection-start="2630" selection-end="2630" vertical-scroll-proportion="-0.015873017" vertical-offset="1834" max-vertical-offset="2496">
+        <state line="8" column="31" selection-start="243" selection-end="243" vertical-scroll-proportion="0.05079365" vertical-offset="0" max-vertical-offset="2384">
           <folding />
         </state>
       </provider>

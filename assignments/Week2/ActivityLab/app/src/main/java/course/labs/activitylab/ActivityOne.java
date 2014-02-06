@@ -64,8 +64,8 @@ public class ActivityOne extends Activity {
 
         }
 
-        // TODO: Emit LogCat message
-
+        // Emit LogCat message
+        Log.i(TAG, "Entered the onCreate method");
 
         mCreate++;
         displayCounts();
@@ -77,8 +77,8 @@ public class ActivityOne extends Activity {
     public void onStart() {
         super.onStart();
 
-        // TODO: Emit LogCat message
-
+        // Emit LogCat message
+        Log.i(TAG, "Entered the onStart method");
 
         mStart++;
         displayCounts();
@@ -88,8 +88,8 @@ public class ActivityOne extends Activity {
     public void onResume() {
         super.onResume();
 
-        // TODO: Emit LogCat message
-
+        // Emit LogCat message
+        Log.i(TAG, "Entered the onResume method");
 
         mResume++;
         displayCounts();
@@ -99,24 +99,24 @@ public class ActivityOne extends Activity {
     public void onPause() {
         super.onPause();
 
-        // TODO: Emit LogCat message
-
+        // Emit LogCat message
+        Log.i(TAG, "Entered the onPause method");
     }
 
     @Override
     public void onStop() {
         super.onStop();
 
-        // TODO: Emit LogCat message
-
+        // Emit LogCat message
+        Log.i(TAG, "Entered the onStop method");
     }
 
     @Override
     public void onRestart() {
         super.onRestart();
 
-        // TODO: Emit LogCat message
-
+        // Emit LogCat message
+        Log.i(TAG, "Entered the onRestart method");
 
         mRestart++;
         displayCounts();
@@ -126,9 +126,8 @@ public class ActivityOne extends Activity {
     public void onDestroy() {
         super.onDestroy();
 
-        // TODO: Emit LogCat message
-
-
+        // Emit LogCat message
+        Log.i(TAG, "Entered the onDestroy method");
     }
 
     @Override
@@ -146,11 +145,9 @@ public class ActivityOne extends Activity {
 
     // Updates the displayed counters
     public void displayCounts() {
-
         mTvCreate.setText("onCreate() calls: " + mCreate);
         mTvStart.setText("onStart() calls: " + mStart);
         mTvResume.setText("onResume() calls: " + mResume);
         mTvRestart.setText("onRestart() calls: " + mRestart);
-
     }
 }
