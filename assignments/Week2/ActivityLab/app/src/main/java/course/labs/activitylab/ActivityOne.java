@@ -57,7 +57,7 @@ public class ActivityOne extends Activity {
         }
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onCreate method");
+        Log.i(TAG, "Entered the onCreate() method");
 
         mCreate++;
         displayCounts();
@@ -70,7 +70,7 @@ public class ActivityOne extends Activity {
         super.onStart();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onStart method");
+        Log.i(TAG, "Entered the onStart() method");
 
         mStart++;
         displayCounts();
@@ -81,7 +81,7 @@ public class ActivityOne extends Activity {
         super.onResume();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onResume method");
+        Log.i(TAG, "Entered the onResume() method");
 
         mResume++;
         displayCounts();
@@ -92,7 +92,7 @@ public class ActivityOne extends Activity {
         super.onPause();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onPause method");
+        Log.i(TAG, "Entered the onPause() method");
     }
 
     @Override
@@ -100,7 +100,7 @@ public class ActivityOne extends Activity {
         super.onStop();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onStop method");
+        Log.i(TAG, "Entered the onStop() method");
     }
 
     @Override
@@ -108,7 +108,7 @@ public class ActivityOne extends Activity {
         super.onRestart();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onRestart method");
+        Log.i(TAG, "Entered the onRestart() method");
 
         mRestart++;
         displayCounts();
@@ -119,7 +119,7 @@ public class ActivityOne extends Activity {
         super.onDestroy();
 
         // Emit LogCat message
-        Log.i(TAG, "Entered the onDestroy method");
+        Log.i(TAG, "Entered the onDestroy() method");
     }
 
     @Override
