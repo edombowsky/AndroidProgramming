@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a37e1fd8-0793-42aa-9857-ade736979f4a" name="Default" comment="Added logging, Exercise A.c&#10;">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
     </list>
@@ -80,7 +79,7 @@
       <file leaf-file-name="ActivityOne.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="49" selection-start="3897" selection-end="3897" vertical-scroll-proportion="0.73466" vertical-offset="1749" max-vertical-offset="2352">
+            <state line="111" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="3.2631578" vertical-offset="474" max-vertical-offset="2352">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1384#1613#0" expanded="true" />
@@ -93,8 +92,10 @@
       <file leaf-file-name="ActivityTwo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="143" column="0" selection-start="3916" selection-end="3916" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2224">
-              <folding />
+            <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="2240">
+              <folding>
+                <element signature="e#1318#1456#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -665,14 +666,15 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="775" />
+    <option name="x" value="234" />
+    <option name="width" value="1046" />
+    <option name="height" value="544" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -981,7 +983,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="775" extended-state="6" />
+    <frame x="234" y="0" width="1046" height="544" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -995,7 +997,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3309859" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1003,7 +1005,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23630673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28927204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1045,7 +1047,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="25" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="2912">
-          <folding />
+          <folding>
+            <element signature="e#1318#1456#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1070,7 +1074,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="25" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="3348">
-          <folding />
+          <folding>
+            <element signature="e#1318#1456#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1083,14 +1089,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="3916" selection-end="3916" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2224">
-          <folding />
+        <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="438" max-vertical-offset="2240">
+          <folding>
+            <element signature="e#1318#1456#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="49" selection-start="3897" selection-end="3897" vertical-scroll-proportion="0.73466" vertical-offset="1749" max-vertical-offset="2352">
+        <state line="111" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="3.2631578" vertical-offset="474" max-vertical-offset="2352">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1384#1613#0" expanded="true" />

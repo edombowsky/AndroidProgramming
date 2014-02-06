@@ -42,10 +42,7 @@ public class ActivityTwo extends Activity {
 
             @Override
             public void onClick(View v) {
-            @Override
-            public void onClick(View v) {
                 finish();
-            }
             }
         });
 
