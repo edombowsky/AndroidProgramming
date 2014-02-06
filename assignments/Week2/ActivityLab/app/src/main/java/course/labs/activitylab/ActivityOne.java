@@ -42,15 +42,7 @@ public class ActivityOne extends Activity {
 
             @Override
             public void onClick(View v) {
-                // TODO:
                 // Launch Activity Two
-                // Hint: use Context's startActivity() method
-
-                // Create an intent stating which Activity you would like to start
-
-
-                // Launch the Activity using the intent
-
                 startActivity(new Intent(v.getContext(), ActivityTwo.class));
             }
         });
