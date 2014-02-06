@@ -51,13 +51,11 @@ public class ActivityTwo extends Activity {
 
         // Check for previously saved state
         if (savedInstanceState != null) {
-
-            // TODO:
             // Restore value of counters from saved state
-            // Only need 4 lines of code, one for every count variable
-
-
-
+            mCreate  = savedInstanceState.getInt(RESTART_KEY);
+            mStart   = savedInstanceState.getInt(START_KEY);
+            mResume  = savedInstanceState.getInt(RESUME_KEY);
+            mRestart = savedInstanceState.getInt(CREATE_KEY);
         }
 
         // Emit LogCat message
@@ -95,7 +93,7 @@ public class ActivityTwo extends Activity {
     public void onPause() {
         super.onPause();
 
-        // TODO: Emit LogCat message
+        // Emit LogCat message
         Log.i(TAG, "Entered the onPause method");
     }
 
@@ -128,23 +126,18 @@ public class ActivityTwo extends Activity {
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-
-        // TODO:
         // Save counter state information with a collection of key-value pairs
-        // 4 lines of code, one for every count variable
-
-
-
-
-
-
+        savedInstanceState.putInt(RESTART_KEY, mCreate);
+        savedInstanceState.putInt(START_KEY, mStart);
+        savedInstanceState.putInt(RESUME_KEY, mResume);
+        savedInstanceState.putInt(CREATE_KEY, mRestart);
     }
 
     // Updates the displayed counters
     public void displayCounts() {
-        mTvCreate.setText("onCreate() calls: " + mCreate);
-        mTvStart.setText("onStart() calls: " + mStart);
-        mTvResume.setText("onResume() calls: " + mResume);
+        mTvCreate.setText("onCreate() calls: "   + mCreate);
+        mTvStart.setText("onStart() calls: "     + mStart);
+        mTvResume.setText("onResume() calls: "   + mResume);
         mTvRestart.setText("onRestart() calls: " + mRestart);
     }
 }

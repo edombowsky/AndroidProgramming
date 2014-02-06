@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a37e1fd8-0793-42aa-9857-ade736979f4a" name="Default" comment="">
+    <list default="true" id="a37e1fd8-0793-42aa-9857-ade736979f4a" name="Default" comment="Added logging, Exercise A.c&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
@@ -77,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivityOne.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ActivityOne.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="2416">
+            <state line="137" column="49" selection-start="3897" selection-end="3897" vertical-scroll-proportion="0.73466" vertical-offset="1749" max-vertical-offset="2352">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1384#1613#0" expanded="true" />
@@ -90,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivityTwo.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ActivityTwo.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.8677686" vertical-offset="862" max-vertical-offset="2336">
+            <state line="143" column="0" selection-start="3916" selection-end="3916" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2224">
               <folding />
             </state>
           </provider>
@@ -665,14 +665,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1280" />
-    <option name="height" value="387" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -981,7 +981,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="387" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="775" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1081,21 +1081,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="0" selection-start="3916" selection-end="3916" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2224">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1512" selection-end="1512" vertical-scroll-proportion="0.0" vertical-offset="528" max-vertical-offset="2416">
+        <state line="137" column="49" selection-start="3897" selection-end="3897" vertical-scroll-proportion="0.73466" vertical-offset="1749" max-vertical-offset="2352">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1384#1613#0" expanded="true" />
             <element signature="e#1602#1603#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.8677686" vertical-offset="862" max-vertical-offset="2336">
-          <folding />
         </state>
       </provider>
     </entry>
