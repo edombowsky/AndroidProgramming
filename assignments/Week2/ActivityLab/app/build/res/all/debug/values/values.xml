@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- From: file:/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
     <string name="app_name">ActivityLab</string>
@@ -13,7 +13,7 @@
     <string name="onResume">onResume() calls: 0</string>
     <string name="onStart">onStart() calls: 0</string>
     <string name="title_activity_activity_two">Activity Two</string>
-    <!-- From: file:/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/values/styles.xml -->
     <eat-comment />
 
     <style name="AppBaseTheme" parent="android:Theme.Light">

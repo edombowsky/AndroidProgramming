@@ -2,24 +2,24 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res" >
+        <source path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res" >
             <file
                 name="ic_launcher"
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/drawable-xhdpi/ic_launcher.png"
                 qualifiers="xhdpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/drawable-ldpi/ic_launcher.png"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/drawable-ldpi/ic_launcher.png"
                 qualifiers="ldpi"
                 type="drawable" />
             <file
                 name="ic_launcher"
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/drawable-hdpi/ic_launcher.png"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/drawable-hdpi/ic_launcher.png"
                 qualifiers="hdpi"
                 type="drawable" />
             <file
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/values-v14/styles.xml"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/values-v14/styles.xml"
                 qualifiers="v14" >
 
                 <style
@@ -30,7 +30,7 @@
                 </style>
             </file>
             <file
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/values/strings.xml"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/values/strings.xml"
                 qualifiers="" >
                 <string name="close" >Close Activity
                 </string>
@@ -52,7 +52,7 @@
                 </string>
             </file>
             <file
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/values/styles.xml"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/values/styles.xml"
                 qualifiers="" >
 
                 <style
@@ -75,11 +75,11 @@
             </file>
             <file
                 name="ic_launcher"
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/drawable-mdpi/ic_launcher.png"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/drawable-mdpi/ic_launcher.png"
                 qualifiers="mdpi"
                 type="drawable" />
             <file
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/values-v11/styles.xml"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/values-v11/styles.xml"
                 qualifiers="v11" >
 
                 <style
@@ -91,20 +91,20 @@
             </file>
             <file
                 name="activity_one"
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/layout/activity_one.xml"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/layout/activity_one.xml"
                 qualifiers=""
                 type="layout" />
             <file
                 name="activity_two"
-                path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/res/layout/activity_two.xml"
+                path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/res/layout/activity_two.xml"
                 qualifiers=""
                 type="layout" />
         </source>
-        <source path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/build/res/rs/debug" />
-        <source path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/build/res/generated/debug" />
+        <source path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/build/res/rs/debug" />
+        <source path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/build/res/generated/debug" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/debug/res" />
+        <source path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/debug/res" />
     </dataSet>
 
 </merger>

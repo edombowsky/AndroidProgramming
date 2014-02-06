@@ -2,10 +2,10 @@
 <merger>
 
     <dataSet config="main" >
-        <source path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/main/assets" />
+        <source path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/main/assets" />
     </dataSet>
     <dataSet config="debug" >
-        <source path="/home/earl/courses/android/assignments/Week2/ActivityLab/app/src/debug/assets" />
+        <source path="/home/earl/courses/AndroidProgramming/assignments/Week2/ActivityLab/app/src/debug/assets" />
     </dataSet>
 
 </merger>
