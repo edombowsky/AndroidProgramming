@@ -12,64 +12,16 @@
       </filter>
     </filters>
   </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Lab-Activity" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a37e1fd8-0793-42aa-9857-ade736979f4a" name="Default" comment="Added logging, Exercise A.c&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Test1_output.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Test2_output.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Test3_output.txt" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\copyright\profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\libraries\robotium_solo_5_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\ActivityLabTest.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLabTest\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLabTest\src\main\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLabTest\src\main\java\course\labs\activitylab\test\Test1.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLabTest\src\main\java\course\labs\activitylab\test\Test2.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLabTest\src\main\java\course\labs\activitylab\test\Test3.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLabTest\src\main\res\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\libs\robotium-solo-5.0.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\instrumentTest\java\course\labs\activitylab\test\Test1.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\instrumentTest\java\course\labs\activitylab\test\Test2.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\instrumentTest\java\course\labs\activitylab\test\Test3.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\instrumentTest\res\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\java\course\labs\activitylab\ActivityOne.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\java\course\labs\activitylab\ActivityTwo.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\drawable-hdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\drawable-ldpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\drawable-mdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\drawable-xhdpi\ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\layout\activity_one.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\layout\activity_two.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\values-v11\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\values-v14\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\values\strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\activityLab\src\main\res\values\styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\gradle\wrapper\gradle-wrapper.jar" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\gradle\wrapper\gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\gradlew" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\import-summary.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\local.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\caeadom\Documents\Courses\AndroidProgramming\assignments\Week2\ActivityLabTest\settings.gradle" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ActivityLab.iml" afterPath="$PROJECT_DIR$/ActivityLab.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" afterPath="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ActivityLab.iws" />
@@ -125,7 +77,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" line="2" class="ActivityTwo.java" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -160,28 +112,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivityOne.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
+      <file leaf-file-name="Test1.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/instrumentTest/java/course/labs/activitylab/test/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="59" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.32330826" vertical-offset="457" max-vertical-offset="2499">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1384#1613#0" expanded="true" />
-                <element signature="e#1602#1603#0" expanded="true" />
-              </folding>
+            <state line="20" column="45" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivityTwo.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="30" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1907" max-vertical-offset="2482">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1318#1456#0" expanded="true" />
-                <element signature="e#1445#1446#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -753,15 +697,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java" />
+        <option value="$PROJECT_DIR$/app/src/instrumentTest/java/course/labs/activitylab/test/Test1.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+    <option name="x" value="569" />
+    <option name="y" value="173" />
+    <option name="width" value="1147" />
+    <option name="height" value="832" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -789,6 +734,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -838,40 +785,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ActivityLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ActivityLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activitylab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -892,43 +805,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="instrumentTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ActivityLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ActivityLab" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="instrumentTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -948,7 +829,7 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5556" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="MyNexusS" />
   </component>
-  <component name="RunManager" selected="Android Tests.Test1">
+  <component name="RunManager" selected="Android Tests.Test2">
     <configuration default="false" name="ActivityOne" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
       <module name="app" />
       <option name="ACTIVITY_CLASS" value="course.labs.activitylab.ActivityOne" />
@@ -1064,19 +945,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1102,6 +970,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1201,17 +1082,17 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Android Application.app" />
-      <item index="1" class="java.lang.String" itemvalue="Android Application.ActivityOne" />
-      <item index="2" class="java.lang.String" itemvalue="Android Tests.Test1" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in app" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in app" />
+      <item index="2" class="java.lang.String" itemvalue="Android Application.ActivityOne" />
+      <item index="3" class="java.lang.String" itemvalue="Android Tests.Test1" />
       <item index="4" class="java.lang.String" itemvalue="Android Tests.Test2" />
       <item index="5" class="java.lang.String" itemvalue="Android Tests.Test3" />
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Android Tests.Test1" />
-        <item index="1" class="java.lang.String" itemvalue="Android Tests.Test3" />
-        <item index="2" class="java.lang.String" itemvalue="Android Tests.Test2" />
+        <item index="0" class="java.lang.String" itemvalue="Android Tests.Test2" />
+        <item index="1" class="java.lang.String" itemvalue="Android Tests.Test1" />
+        <item index="2" class="java.lang.String" itemvalue="Android Tests.Test3" />
         <item index="3" class="java.lang.String" itemvalue="Android Application.ActivityOne" />
       </list>
     </recent_temporary>
@@ -1249,8 +1130,28 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="569" y="173" width="1147" height="832" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1260,19 +1161,19 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295063" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42540622" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3306544" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295063" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298969" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2887668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43434343" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1308,11 +1209,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="77" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0" vertical-offset="520" max-vertical-offset="2499">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="30" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1907" max-vertical-offset="2482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import-summary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="59" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2499">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/instrumentTest/java/course/labs/activitylab/test/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="45" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="30" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1907" max-vertical-offset="2482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import-summary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="59" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2499">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="30" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1907" max-vertical-offset="2482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/import-summary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="111" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1887" max-vertical-offset="2431">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1384#1613#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1320,11 +1295,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2482">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1318#1456#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1340,8 +1311,6 @@
         <state line="111" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1656" max-vertical-offset="2499">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1384#1613#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1349,11 +1318,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2482">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1318#1456#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,8 +1334,6 @@
         <state line="111" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1656" max-vertical-offset="2499">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1384#1613#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1378,11 +1341,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2482">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1318#1456#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,8 +1357,6 @@
         <state line="111" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1798" max-vertical-offset="2499">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1384#1613#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1407,11 +1364,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2482">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1318#1456#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,8 +1380,6 @@
         <state line="111" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0" vertical-offset="1887" max-vertical-offset="2499">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1384#1613#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1436,11 +1387,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2482">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1318#1456#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1456,8 +1403,6 @@
         <state line="15" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2960">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1384#1613#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1465,11 +1410,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="25" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="2912">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1318#1456#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1485,8 +1426,6 @@
         <state line="15" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="3330">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1384#1613#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1494,10 +1433,22 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="25" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="3348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="30" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1907" max-vertical-offset="2482">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="77" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.7" vertical-offset="469" max-vertical-offset="2431">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1318#1456#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1509,25 +1460,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityTwo.java">
+    <entry file="file://$PROJECT_DIR$/app/src/instrumentTest/java/course/labs/activitylab/test/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="30" selection-start="3077" selection-end="3077" vertical-scroll-proportion="0.0" vertical-offset="1907" max-vertical-offset="2482">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1318#1456#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-          </folding>
+        <state line="20" column="45" selection-start="468" selection-end="468" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/course/labs/activitylab/ActivityOne.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="59" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.32330826" vertical-offset="457" max-vertical-offset="2499">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1384#1613#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
         </state>
       </provider>
     </entry>
