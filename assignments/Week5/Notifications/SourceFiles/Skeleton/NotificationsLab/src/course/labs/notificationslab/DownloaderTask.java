@@ -131,9 +131,9 @@ public class DownloaderTask extends AsyncTask<String, Void, String[]> {
 	private void notify(final boolean success) {
 		log("Entered notify()");
 
-		final Intent restartMainActivtyIntent = new Intent(mApplicationContext,
+		final Intent restartMainActivityIntent = new Intent(mApplicationContext,
 				MainActivity.class);
-		restartMainActivtyIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		restartMainActivityIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
 		if (success) {
 
@@ -163,17 +163,18 @@ public class DownloaderTask extends AsyncTask<String, Void, String[]> {
 
 						log("Entered result receiver's onReceive() method");
 
-						// TODO: Check whether the result code is RESULT_OK
+						// TODO: Check whether the result code is RESULT_OK  --  EMD
 
-						if (/*change this*/ true) {
+						if (getResultCode() != Activity.RESULT_OK) {
 
-							// TODO:  If so, create a PendingIntent using the
+							// TODO:  If so, create a PendingIntent using the  --  EMD
 							// restartMainActivityIntent and set its flags
 							// to FLAG_UPDATE_CURRENT
 							
-							final PendingIntent pendingIntent = null;
-							
-
+							final PendingIntent pendingIntent = PendingIntent.
+									getActivity(mApplicationContext, 0, 
+											restartMainActivityIntent, 
+											PendingIntent.FLAG_UPDATE_CURRENT);
 
 							// Uses R.layout.custom_notification for the
 							// layout of the notification View. The xml 
@@ -183,22 +184,30 @@ public class DownloaderTask extends AsyncTask<String, Void, String[]> {
 									mApplicationContext.getPackageName(),
 									R.layout.custom_notification);
 
-							// TODO: Set the notification View's text to
+							// TODO: Set the notification View's text to  --  EMD
 							// reflect whether or the download completed
 							// successfully
-
-
+							if(success) {
+								mContentView.setTextViewText(R.id.text, successMsg);
+							} else {
+								mContentView.setTextViewText(R.id.text, failMsg);
+							}
 							
-							// TODO: Use the Notification.Builder class to
+							// TODO: Use the Notification.Builder class to  --  EMD
 							// create the Notification. You will have to set
 							// several pieces of information. You can use
 							// android.R.drawable.stat_sys_warning
 							// for the small icon. You should also setAutoCancel(true). 
 
-							Notification.Builder notificationBuilder = null;
+							Notification.Builder notificationBuilder = new Notification.Builder(mApplicationContext)
+                                                            .setSmallIcon(android.R.drawable.stat_sys_warning)
+                                                            .setAutoCancel(true)
+                                                            .setContentIntent(pendingIntent)
+                                                            .setContent(mContentView);
 
-							// TODO: Send the notification
-
+							// TODO: Send the notification  --  EMD
+							NotificationManager mNotificationMgr = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
+							mNotificationMgr.notify(MY_NOTIFICATION_ID, notificationBuilder.build());
 							
 							
 							log("Notification Area Notification sent");
