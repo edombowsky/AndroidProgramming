@@ -24,33 +24,33 @@ import android.widget.Toast;
 import course.labs.contentproviderlab.provider.PlaceBadgesContract;
 
 public class PlaceViewActivity extends ListActivity implements
-		LocationListener, LoaderCallbacks<Cursor> {
-	private static final long FIVE_MINS = 5 * 60 * 1000;
+        LocationListener, LoaderCallbacks<Cursor> {
+    private static final long FIVE_MINS = 5 * 60 * 1000;
 
-	private static String TAG = "Lab-ContentProvider";
+    private static String TAG = "Lab-ContentProvider";
 
-	// The last valid location reading
-	private Location mLastLocationReading;
+    // The last valid location reading
+    private Location mLastLocationReading;
 
-	// The ListView's adapter
-	// private PlaceViewAdapter mAdapter;
-	private PlaceViewAdapter mCursorAdapter;
+    // The ListView's adapter
+    // private PlaceViewAdapter mAdapter;
+    private PlaceViewAdapter mCursorAdapter;
 
-	// default minimum time between new location readings
-	private long mMinTime = 5000;
+    // default minimum time between new location readings
+    private long mMinTime = 5000;
 
-	// default minimum distance between old and new readings.
-	private float mMinDistance = 1000.0f;
+    // default minimum distance between old and new readings.
+    private float mMinDistance = 1000.0f;
 
-	// Reference to the LocationManager
-	private LocationManager mLocationManager;
+    // Reference to the LocationManager
+    private LocationManager mLocationManager;
 
-	// A fake location provider used for testing
-	private MockLocationProvider mMockLocationProvider;
+    // A fake location provider used for testing
+    private MockLocationProvider mMockLocationProvider;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         // TODO - Set up the app's user interface
         // This class is a ListActivity, so it has its own ListView
@@ -80,162 +80,162 @@ public class PlaceViewActivity extends ListActivity implements
         // log("Location data is not available");
 
 
-		
-		
-		
-		// TODO - Create and set empty PlaceViewAdapter
+        
+        
+        
+        // TODO - Create and set empty PlaceViewAdapter
         // ListView's adapter should be a PlaceViewAdapter called mCursorAdapter
 
-		
-		
-		
-		// TODO - Initialize a CursorLoader
+        
+        
+        
+        // TODO - Initialize a CursorLoader
 
         
-	}
+    }
 
-	@Override
-	protected void onResume() {
-		super.onResume();
+    @Override
+    protected void onResume() {
+        super.onResume();
 
-		mMockLocationProvider = new MockLocationProvider(
-				LocationManager.NETWORK_PROVIDER, this);
+        mMockLocationProvider = new MockLocationProvider(
+                LocationManager.NETWORK_PROVIDER, this);
 
-		// TODO - Check NETWORK_PROVIDER for an existing location reading.
-		// Only keep this last reading if it is fresh - less than 5 minutes old.
-
-
-		
-		
-		
-		// TODO - Register to receive location updates from NETWORK_PROVIDER
-
-		
-		
-		
-	}
-
-	@Override
-	protected void onPause() {
-
-		mMockLocationProvider.shutdown();
-
-		// TODO - Unregister for location updates
-
-		
-		
-		super.onPause();
-	}
-
-	public void addNewPlace(PlaceRecord place) {
-
-		log("Entered addNewPlace()");
-
-		mCursorAdapter.add(place);
-
-	}
-
-	@Override
-	public void onLocationChanged(Location currentLocation) {
-
-		// TODO - Handle location updates
-		// Cases to consider
-		// 1) If there is no last location, keep the current location.
-		// 2) If the current location is older than the last location, ignore
-		// the current location
-		// 3) If the current location is newer than the last locations, keep the
-		// current location.
+        // TODO - Check NETWORK_PROVIDER for an existing location reading.
+        // Only keep this last reading if it is fresh - less than 5 minutes old.
 
 
-	
-	
-	
-	}
+        
+        
+        
+        // TODO - Register to receive location updates from NETWORK_PROVIDER
 
-	@Override
-	public void onProviderDisabled(String provider) {
-		// not implemented
-	}
+        
+        
+        
+    }
 
-	@Override
-	public void onProviderEnabled(String provider) {
-		// not implemented
-	}
+    @Override
+    protected void onPause() {
 
-	@Override
-	public void onStatusChanged(String provider, int status, Bundle extras) {
-		// not implemented
-	}
+        mMockLocationProvider.shutdown();
 
-	@Override
-	public Loader<Cursor> onCreateLoader(int arg0, Bundle arg1) {
-		log("Entered onCreateLoader()");
+        // TODO - Unregister for location updates
 
-		// TODO - Create a new CursorLoader and return it
-		
+        
+        
+        super.onPause();
+    }
+
+    public void addNewPlace(PlaceRecord place) {
+
+        log("Entered addNewPlace()");
+
+        mCursorAdapter.add(place);
+
+    }
+
+    @Override
+    public void onLocationChanged(Location currentLocation) {
+
+        // TODO - Handle location updates
+        // Cases to consider
+        // 1) If there is no last location, keep the current location.
+        // 2) If the current location is older than the last location, ignore
+        // the current location
+        // 3) If the current location is newer than the last locations, keep the
+        // current location.
+
+
+    
+    
+    
+    }
+
+    @Override
+    public void onProviderDisabled(String provider) {
+        // not implemented
+    }
+
+    @Override
+    public void onProviderEnabled(String provider) {
+        // not implemented
+    }
+
+    @Override
+    public void onStatusChanged(String provider, int status, Bundle extras) {
+        // not implemented
+    }
+
+    @Override
+    public Loader<Cursor> onCreateLoader(int arg0, Bundle arg1) {
+        log("Entered onCreateLoader()");
+
+        // TODO - Create a new CursorLoader and return it
+        
         
         return null;
-	}
-
-	@Override
-	public void onLoadFinished(Loader<Cursor> newLoader, Cursor newCursor) {
-
-		// TODO - Swap in the newCursor
-
-	
     }
 
-	@Override
-	public void onLoaderReset(Loader<Cursor> newLoader) {
+    @Override
+    public void onLoadFinished(Loader<Cursor> newLoader, Cursor newCursor) {
 
-		// TODO - Swap in a null Cursor
+        // TODO - Swap in the newCursor
 
-	
+    
     }
 
-	private long age(Location location) {
-		return System.currentTimeMillis() - location.getTime();
-	}
+    @Override
+    public void onLoaderReset(Loader<Cursor> newLoader) {
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		MenuInflater inflater = getMenuInflater();
-		inflater.inflate(R.menu.main, menu);
-		return true;
-	}
+        // TODO - Swap in a null Cursor
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case R.id.print_badges:
-			ArrayList<PlaceRecord> currData = mCursorAdapter.getList();
-			for (int i = 0; i < currData.size(); i++) {
-				log(currData.get(i).toString());
-			}
-			return true;
-		case R.id.delete_badges:
-			mCursorAdapter.removeAllViews();
-			return true;
-		case R.id.place_one:
-			mMockLocationProvider.pushLocation(37.422, -122.084);
-			return true;
-		case R.id.place_invalid:
-			mMockLocationProvider.pushLocation(0, 0);
-			return true;
-		case R.id.place_two:
-			mMockLocationProvider.pushLocation(38.996667, -76.9275);
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
-		}
-	}
+    
+    }
 
-	private static void log(String msg) {
-		try {
-			Thread.sleep(100);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		Log.i(TAG, msg);
-	}
+    private long age(Location location) {
+        return System.currentTimeMillis() - location.getTime();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+        case R.id.print_badges:
+            ArrayList<PlaceRecord> currData = mCursorAdapter.getList();
+            for (int i = 0; i < currData.size(); i++) {
+                log(currData.get(i).toString());
+            }
+            return true;
+        case R.id.delete_badges:
+            mCursorAdapter.removeAllViews();
+            return true;
+        case R.id.place_one:
+            mMockLocationProvider.pushLocation(37.422, -122.084);
+            return true;
+        case R.id.place_invalid:
+            mMockLocationProvider.pushLocation(0, 0);
+            return true;
+        case R.id.place_two:
+            mMockLocationProvider.pushLocation(38.996667, -76.9275);
+            return true;
+        default:
+            return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private static void log(String msg) {
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Log.i(TAG, msg);
+    }
 }
