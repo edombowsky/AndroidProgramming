@@ -213,7 +213,11 @@ public class PlaceDownloaderTask extends AsyncTask<Location, Void, PlaceRecord> 
     }
 
     private static String generateURL(String username, Location location) {
-
+//        String msg = "http://www.geonames.org/findNearbyPlaceName?username="
+//                + username + "&style=full&lat=" + location.getLatitude()
+//                + "&lng=" + location.getLongitude();
+//
+//        Log.i("Lab-ContentProvider", msg);
         return "http://www.geonames.org/findNearbyPlaceName?username="
                 + username + "&style=full&lat=" + location.getLatitude()
                 + "&lng=" + location.getLongitude();
