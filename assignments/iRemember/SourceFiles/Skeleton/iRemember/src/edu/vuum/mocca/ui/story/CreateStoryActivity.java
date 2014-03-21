@@ -72,231 +72,231 @@ import android.widget.Toast;
  */
 public class CreateStoryActivity extends StoryActivityBase {
 
-	private final static String LOG_TAG = CreateStoryActivity.class
-			.getCanonicalName();
+    private final static String LOG_TAG = CreateStoryActivity.class
+            .getCanonicalName();
 
-	public static final int MEDIA_TYPE_IMAGE = 1;
-	public static final int MEDIA_TYPE_VIDEO = 2;
-	public static final int MEDIA_TYPE_AUDIO = 3;
+    public static final int MEDIA_TYPE_IMAGE = 1;
+    public static final int MEDIA_TYPE_VIDEO = 2;
+    public static final int MEDIA_TYPE_AUDIO = 3;
 
-	static final int CAMERA_PIC_REQUEST = 1;
-	static final int CAMERA_VIDEO_REQUEST = 2;
-	static final int MIC_SOUND_REQUEST = 3;
+    static final int CAMERA_PIC_REQUEST = 1;
+    static final int CAMERA_VIDEO_REQUEST = 2;
+    static final int MIC_SOUND_REQUEST = 3;
 
-	private CreateStoryFragment fragment;
+    private CreateStoryFragment fragment;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-		if (savedInstanceState == null) {
-			fragment = CreateStoryFragment.newInstance();
+        if (savedInstanceState == null) {
+            fragment = CreateStoryFragment.newInstance();
 
-			fragment.setArguments(getIntent().getExtras());
+            fragment.setArguments(getIntent().getExtras());
 
-			getSupportFragmentManager().beginTransaction()
-					.add(android.R.id.content, fragment).commit();
-		}
-	}
+            getSupportFragmentManager().beginTransaction()
+            .add(android.R.id.content, fragment).commit();
+        }
+    }
 
-	/**
-	 * Method to be called when Audio Clicked button is pressed.
-	 */
-	public void addAudioClicked(View aView) {
-		launchSoundIntent();
-	}
+    /**
+     * Method to be called when Audio Clicked button is pressed.
+     */
+    public void addAudioClicked(View aView) {
+        launchSoundIntent();
+    }
 
-	/**
-	 * Method to be called when Video Clicked button is pressed.
-	 */
-	public void addVideoClicked(View aView) {
-		launchVideoCameraIntent();
-	}
+    /**
+     * Method to be called when Video Clicked button is pressed.
+     */
+    public void addVideoClicked(View aView) {
+        launchVideoCameraIntent();
+    }
 
-	/**
-	 * Method to be called when Photo Clicked button is pressed.
-	 */
-	public void addPhotoClicked(View aView) {
-		launchCameraIntent();
-	}
+    /**
+     * Method to be called when Photo Clicked button is pressed.
+     */
+    public void addPhotoClicked(View aView) {
+        launchCameraIntent();
+    }
 
-	public void getDateClicked(View aView){
-	    DialogFragment newFragment = new DatePickerFragment();
-	    newFragment.show(getFragmentManager(), "datePicker");
-	}
-	
-	public void getLocationClicked(View aView) {
-		// Acquire a reference to the system Location Manager
-		final LocationManager locationManager = (LocationManager) this
-				.getSystemService(Context.LOCATION_SERVICE);
+    public void getDateClicked(View aView){
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getFragmentManager(), "datePicker");
+    }
 
-		// Define a listener that responds to location updates
-		LocationListener locationListener = new LocationListener() {
-			public void onLocationChanged(Location location) {
-				// Called when a new location is found by the network location
-				// provider.
+    public void getLocationClicked(View aView) {
+        // Acquire a reference to the system Location Manager
+        final LocationManager locationManager = (LocationManager) this
+                .getSystemService(Context.LOCATION_SERVICE);
 
-				Toast.makeText(getApplicationContext(),
-						"New Location obtained.", Toast.LENGTH_LONG).show();
-				makeUseOfNewLocation(location);
-				locationManager.removeUpdates(this);
+        // Define a listener that responds to location updates
+        LocationListener locationListener = new LocationListener() {
+            public void onLocationChanged(Location location) {
+                // Called when a new location is found by the network location
+                // provider.
 
-			}
+                Toast.makeText(getApplicationContext(),
+                        "New Location obtained.", Toast.LENGTH_LONG).show();
+                makeUseOfNewLocation(location);
+                locationManager.removeUpdates(this);
 
-			public void onStatusChanged(String provider, int status,
-					Bundle extras) {
-			}
+            }
 
-			public void onProviderEnabled(String provider) {
-			}
+            public void onStatusChanged(String provider, int status,
+                    Bundle extras) {
+            }
 
-			public void onProviderDisabled(String provider) {
-			}
-		};
+            public void onProviderEnabled(String provider) {
+            }
 
-		// Register the listener with the Location Manager to receive location
-		// updates
-		if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-			Log.d(LOG_TAG, "locationManager.isProviderEnabled = true/gps");
-			locationManager.requestLocationUpdates(
-					LocationManager.GPS_PROVIDER, 0, 0, locationListener);
-			Location location = locationManager
-					.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-			if (location != null) {
-				makeUseOfNewLocation(location);
-			} else {
-				Toast.makeText(getApplicationContext(),
-						"GPS has yet to calculate location.", Toast.LENGTH_LONG)
-						.show();
-			}
+            public void onProviderDisabled(String provider) {
+            }
+        };
 
-		} else {
-			Toast.makeText(getApplicationContext(), "GPS is not enabled.",
-					Toast.LENGTH_LONG).show();
-		}
-	}
+        // Register the listener with the Location Manager to receive location
+        // updates
+        if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            Log.d(LOG_TAG, "locationManager.isProviderEnabled = true/gps");
+            locationManager.requestLocationUpdates(
+                    LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+            Location location = locationManager
+                    .getLastKnownLocation(LocationManager.GPS_PROVIDER);
+            if (location != null) {
+                makeUseOfNewLocation(location);
+            } else {
+                Toast.makeText(getApplicationContext(),
+                        "GPS has yet to calculate location.", Toast.LENGTH_LONG)
+                        .show();
+            }
 
-	private void makeUseOfNewLocation(Location loc) {
-		fragment.setLocation(loc);
-	}
+        } else {
+            Toast.makeText(getApplicationContext(), "GPS is not enabled.",
+                    Toast.LENGTH_LONG).show();
+        }
+    }
 
-	private static Uri getOutputMediaFileUri(int type) {
-		return Uri.fromFile(getOutputMediaFile(type));
-	}
+    private void makeUseOfNewLocation(Location loc) {
+        fragment.setLocation(loc);
+    }
 
-	private static File getOutputMediaFile(int type) {
-		Log.d(LOG_TAG, "getOutputMediaFile() type:" + type);
-		// To be safe, you should check that the SDCard is mounted
-		// using Environment.getExternalStorageState() before doing this.
+    private static Uri getOutputMediaFileUri(int type) {
+        return Uri.fromFile(getOutputMediaFile(type));
+    }
 
-		// For future implementation: store videos in a separate directory
-		File mediaStorageDir = new File(
-				Environment
-						.getExternalStorageDirectory(),
-				"iRemember");
-		// This location works best if you want the created images to be shared
-		// between applications and persist after your app has been uninstalled.
+    private static File getOutputMediaFile(int type) {
+        Log.d(LOG_TAG, "getOutputMediaFile() type:" + type);
+        // To be safe, you should check that the SDCard is mounted
+        // using Environment.getExternalStorageState() before doing this.
 
-		// Create the storage directory if it does not exist
-		if (!mediaStorageDir.exists()) {
-			if (!mediaStorageDir.mkdirs()) {
-				Log.d("MyCameraApp", "failed to create directory");
-				return null;
-			}
-		}
+        // For future implementation: store videos in a separate directory
+        File mediaStorageDir = new File(
+                Environment
+                .getExternalStorageDirectory(),
+                "iRemember");
+        // This location works best if you want the created images to be shared
+        // between applications and persist after your app has been uninstalled.
 
-		// Create a media file name
-		String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US)
-				.format(new Date());
-		File mediaFile;
-		if (type == MEDIA_TYPE_IMAGE) {
-			mediaFile = new File(mediaStorageDir.getPath() + File.separator
-					+ "IMG_" + timeStamp + ".jpg");
-		} else if (type == MEDIA_TYPE_VIDEO) {
-			mediaFile = new File(mediaStorageDir.getPath() + File.separator
-					+ "VID_" + timeStamp + ".mp4");
-		} else if (type == MEDIA_TYPE_AUDIO) {
-			mediaFile = new File(mediaStorageDir.getPath() + File.separator
-					+ "AUD_" + timeStamp + ".3gp");
-		} else {
-			Log.e(LOG_TAG, "typ of media file not supported: type was:" + type);
-			return null;
-		}
+        // Create the storage directory if it does not exist
+        if (!mediaStorageDir.exists()) {
+            if (!mediaStorageDir.mkdirs()) {
+                Log.d("MyCameraApp", "failed to create directory");
+                return null;
+            }
+        }
 
-		return mediaFile;
-	}
-	
-	// This function creates a new Intent to launch the Audio Recording Activity
-	
-	private void launchSoundIntent() {
-		
-		// TODO - Create a new intent to launch the SoundRecordActivity activity
+        // Create a media file name
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US)
+        .format(new Date());
+        File mediaFile;
+        if (type == MEDIA_TYPE_IMAGE) {
+            mediaFile = new File(mediaStorageDir.getPath() + File.separator
+                    + "IMG_" + timeStamp + ".jpg");
+        } else if (type == MEDIA_TYPE_VIDEO) {
+            mediaFile = new File(mediaStorageDir.getPath() + File.separator
+                    + "VID_" + timeStamp + ".mp4");
+        } else if (type == MEDIA_TYPE_AUDIO) {
+            mediaFile = new File(mediaStorageDir.getPath() + File.separator
+                    + "AUD_" + timeStamp + ".3gp");
+        } else {
+            Log.e(LOG_TAG, "typ of media file not supported: type was:" + type);
+            return null;
+        }
 
-		
-		// TODO - Use getOutputMediaFile() to create a new 
-		// filename for this specific sound file
-		
-		
-		// TODO - Add the filename to the Intent as an extra. Use the Intent-extra name
-		// from the SoundRecordActivity class, EXTRA_OUTPUT
+        return mediaFile;
+    }
 
-		
-		// TODO - Start a new activity for result, using the new intent and the request
-		// code MIC_SOUND_REQUEST
-		
-	}
-	
-	// This function creates a new Intent to launch the built-in Camera activity
+    // This function creates a new Intent to launch the Audio Recording Activity
 
-	private void launchCameraIntent() {
-		
-		// TODO - Create a new intent to launch the MediaStore, Image capture function
-		// Hint: use standard Intent from MediaStore class
-		// See: http://developer.android.com/reference/android/provider/MediaStore.html
+    private void launchSoundIntent() {
 
-		
-		// TODO - Set the imagePath for this image file using the pre-made function
-		// getOutputMediaFile to create a new filename for this specific image;
+        // TODO - Create a new intent to launch the SoundRecordActivity activity
 
-		
-		// TODO - Add the filename to the Intent as an extra. Use the Intent-extra name
-		// from the MediaStore class, EXTRA_OUTPUT
-		
-		
-		// TODO - Start a new activity for result, using the new intent and the request
-		// code CAMERA_PIC_REQUEST
-		
 
-	}
+        // TODO - Use getOutputMediaFile() to create a new 
+        // filename for this specific sound file
 
-	// This function creates a new Intent to launch the built-in Video Camera activity
-	
-	private void launchVideoCameraIntent() {
-		// TODO - Create a new intent to launch the MediaStore, Image capture function
-		// Hint: use standard Intent from MediaStore class
-		// See: http://developer.android.com/reference/android/provider/MediaStore.html
 
-		
-		// TODO - Set the fileUri for this video file using the pre-made function
-		// getOutputMediaFile to create a new filename for this specific video;
-		
+        // TODO - Add the filename to the Intent as an extra. Use the Intent-extra name
+        // from the SoundRecordActivity class, EXTRA_OUTPUT
 
-		
-		// TODO - Add the filename to the Intent as an extra. Use the Intent-extra name
-		// from the MediaStore class, EXTRA_OUTPUT
 
-		
-		// TODO - Specify as an extra that the video quality should be HIGH. Use the
-		// Intent-extra name, EXTRA_VIDEO_QUALITY, from the MediaStore class
-		// set the video image quality to high 
-		
+        // TODO - Start a new activity for result, using the new intent and the request
+        // code MIC_SOUND_REQUEST
 
-		
-		// TODO - Start a new activity for result, using the new intent and the request
-		// code CAMERA_VIDEO_REQUEST
-		
+    }
 
-	
-	}
+    // This function creates a new Intent to launch the built-in Camera activity
+
+    private void launchCameraIntent() {
+
+        // TODO - Create a new intent to launch the MediaStore, Image capture function
+        // Hint: use standard Intent from MediaStore class
+        // See: http://developer.android.com/reference/android/provider/MediaStore.html
+
+
+        // TODO - Set the imagePath for this image file using the pre-made function
+        // getOutputMediaFile to create a new filename for this specific image;
+
+
+        // TODO - Add the filename to the Intent as an extra. Use the Intent-extra name
+        // from the MediaStore class, EXTRA_OUTPUT
+
+
+        // TODO - Start a new activity for result, using the new intent and the request
+        // code CAMERA_PIC_REQUEST
+
+
+    }
+
+    // This function creates a new Intent to launch the built-in Video Camera activity
+
+    private void launchVideoCameraIntent() {
+        // TODO - Create a new intent to launch the MediaStore, Image capture function
+        // Hint: use standard Intent from MediaStore class
+        // See: http://developer.android.com/reference/android/provider/MediaStore.html
+
+
+        // TODO - Set the fileUri for this video file using the pre-made function
+        // getOutputMediaFile to create a new filename for this specific video;
+
+
+
+        // TODO - Add the filename to the Intent as an extra. Use the Intent-extra name
+        // from the MediaStore class, EXTRA_OUTPUT
+
+
+        // TODO - Specify as an extra that the video quality should be HIGH. Use the
+        // Intent-extra name, EXTRA_VIDEO_QUALITY, from the MediaStore class
+        // set the video image quality to high 
+
+
+
+        // TODO - Start a new activity for result, using the new intent and the request
+        // code CAMERA_VIDEO_REQUEST
+
+
+
+    }
 
 }

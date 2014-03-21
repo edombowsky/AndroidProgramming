@@ -75,278 +75,278 @@ import edu.vuum.mocca.orm.StoryData;
 
 public class StoryViewFragment extends Fragment {
 
-	private static final String LOG_TAG = StoryViewFragment.class
-			.getCanonicalName();
+    private static final String LOG_TAG = StoryViewFragment.class
+            .getCanonicalName();
 
-	private MoocResolver resolver;
-	public final static String rowIdentifyerTAG = "index";
+    private MoocResolver resolver;
+    public final static String rowIdentifyerTAG = "index";
 
-	private OnOpenWindowInterface mOpener;
+    private OnOpenWindowInterface mOpener;
 
-	StoryData storyData;
+    StoryData storyData;
 
-	TextView titleTV;
-	TextView bodyTV;
-	Button audioButton;
-	VideoView videoLinkView;
-	TextView imageNameTV;
-	ImageView imageMetaDataView;
-	TextView storyTimeTV;
-	TextView latitudeTV;
-	TextView longitudeTV;
+    TextView titleTV;
+    TextView bodyTV;
+    Button audioButton;
+    VideoView videoLinkView;
+    TextView imageNameTV;
+    ImageView imageMetaDataView;
+    TextView storyTimeTV;
+    TextView latitudeTV;
+    TextView longitudeTV;
 
-	// buttons for edit and delete
-	Button editButton;
-	Button deleteButton;
+    // buttons for edit and delete
+    Button editButton;
+    Button deleteButton;
 
-	OnClickListener myOnClickListener = new OnClickListener() {
-		@Override
-		public void onClick(View view) {
+    OnClickListener myOnClickListener = new OnClickListener() {
+        @Override
+        public void onClick(View view) {
 
-			switch (view.getId()) {
-			case R.id.button_story_view_to_delete:
-				deleteButtonPressed();
-				break;
-			case R.id.button_story_view_to_edit:
-				editButtonPressed();
-				break;
-			default:
-				break;
-			}
-		}
-	};
+            switch (view.getId()) {
+            case R.id.button_story_view_to_delete:
+                deleteButtonPressed();
+                break;
+            case R.id.button_story_view_to_edit:
+                editButtonPressed();
+                break;
+            default:
+                break;
+            }
+        }
+    };
 
-	public static StoryViewFragment newInstance(long index) {
-		StoryViewFragment f = new StoryViewFragment();
+    public static StoryViewFragment newInstance(long index) {
+        StoryViewFragment f = new StoryViewFragment();
 
-		// Supply index input as an argument.
-		Bundle args = new Bundle();
-		args.putLong(rowIdentifyerTAG, index);
-		f.setArguments(args);
+        // Supply index input as an argument.
+        Bundle args = new Bundle();
+        args.putLong(rowIdentifyerTAG, index);
+        f.setArguments(args);
 
-		return f;
-	}
+        return f;
+    }
 
-	// this fragment was attached to an activity
+    // this fragment was attached to an activity
 
-	@Override
-	public void onAttach(Activity activity) {
-		super.onAttach(activity);
-		try {
-			mOpener = (OnOpenWindowInterface) activity;
-			resolver = new MoocResolver(activity);
-		} catch (ClassCastException e) {
-			throw new ClassCastException(activity.toString()
-					+ " must implement OnOpenWindowListener");
-		}
-	}
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        try {
+            mOpener = (OnOpenWindowInterface) activity;
+            resolver = new MoocResolver(activity);
+        } catch (ClassCastException e) {
+            throw new ClassCastException(activity.toString()
+                    + " must implement OnOpenWindowListener");
+        }
+    }
 
-	// this fragment is being created.
+    // this fragment is being created.
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setRetainInstance(true);
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setRetainInstance(true);
 
-	}
+    }
 
-	// this fragment is creating its view before it can be modified
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.story_view_fragment, container,
-				false);
-		container.setBackgroundColor(Color.GRAY);
-		return view;
-	}
+    // this fragment is creating its view before it can be modified
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+            Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.story_view_fragment, container,
+                false);
+        container.setBackgroundColor(Color.GRAY);
+        return view;
+    }
 
-	// this fragment is modifying its view before display
-	@Override
-	public void onActivityCreated(Bundle savedInstanceState) {
-		super.onActivityCreated(savedInstanceState);
+    // this fragment is modifying its view before display
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
-		titleTV = (TextView) getView()
-				.findViewById(R.id.story_view_value_title);
-		bodyTV = (TextView) getView().findViewById(R.id.story_view_value_body);
-		audioButton = (Button) getView().findViewById(
-				R.id.story_view_value_audio_link);
-		videoLinkView = (VideoView) getView().findViewById(
-				R.id.story_view_value_video_link);
-		imageNameTV = (TextView) getView().findViewById(
-				R.id.story_view_value_image_name);
-		imageMetaDataView = (ImageView) getView().findViewById(
-				R.id.story_view_value_image_meta_data);
-		storyTimeTV = (TextView) getView().findViewById(
-				R.id.story_view_value_story_time);
-		latitudeTV = (TextView) getView().findViewById(
-				R.id.story_view_value_latitude);
-		longitudeTV = (TextView) getView().findViewById(
-				R.id.story_view_value_longitude);
+        titleTV = (TextView) getView()
+                .findViewById(R.id.story_view_value_title);
+        bodyTV = (TextView) getView().findViewById(R.id.story_view_value_body);
+        audioButton = (Button) getView().findViewById(
+                R.id.story_view_value_audio_link);
+        videoLinkView = (VideoView) getView().findViewById(
+                R.id.story_view_value_video_link);
+        imageNameTV = (TextView) getView().findViewById(
+                R.id.story_view_value_image_name);
+        imageMetaDataView = (ImageView) getView().findViewById(
+                R.id.story_view_value_image_meta_data);
+        storyTimeTV = (TextView) getView().findViewById(
+                R.id.story_view_value_story_time);
+        latitudeTV = (TextView) getView().findViewById(
+                R.id.story_view_value_latitude);
+        longitudeTV = (TextView) getView().findViewById(
+                R.id.story_view_value_longitude);
 
-		titleTV.setText("" + "");
-		bodyTV.setText("" + "");
-		imageNameTV.setText("" + "");
-		storyTimeTV.setText("" + 0);
-		latitudeTV.setText("" + 0);
-		longitudeTV.setText("" + 0);
+        titleTV.setText("" + "");
+        bodyTV.setText("" + "");
+        imageNameTV.setText("" + "");
+        storyTimeTV.setText("" + 0);
+        latitudeTV.setText("" + 0);
+        longitudeTV.setText("" + 0);
 
-		editButton = (Button) getView().findViewById(
-				R.id.button_story_view_to_edit);
-		deleteButton = (Button) getView().findViewById(
-				R.id.button_story_view_to_delete);
+        editButton = (Button) getView().findViewById(
+                R.id.button_story_view_to_edit);
+        deleteButton = (Button) getView().findViewById(
+                R.id.button_story_view_to_delete);
 
-		editButton.setOnClickListener(myOnClickListener);
-		deleteButton.setOnClickListener(myOnClickListener);
+        editButton.setOnClickListener(myOnClickListener);
+        deleteButton.setOnClickListener(myOnClickListener);
 
-		try {
-			setUiToStoryData(getUniqueKey());
-		} catch (RemoteException e) {
-			Toast.makeText(getActivity(),
-					"Error retrieving information from local data store.",
-					Toast.LENGTH_LONG).show();
-			Log.e(LOG_TAG, "Error getting Story data from C.P.");
-			// e.printStackTrace();
-		}
-	}
+        try {
+            setUiToStoryData(getUniqueKey());
+        } catch (RemoteException e) {
+            Toast.makeText(getActivity(),
+                    "Error retrieving information from local data store.",
+                    Toast.LENGTH_LONG).show();
+            Log.e(LOG_TAG, "Error getting Story data from C.P.");
+            // e.printStackTrace();
+        }
+    }
 
-	public void setUiToStoryData(long getUniqueKey) throws RemoteException {
-		Log.d(LOG_TAG, "setUiToStoryData");
-		storyData = resolver.getStoryDataViaRowID(getUniqueKey);
-		if (storyData == null) {
-			getView().setVisibility(View.GONE);
-		} else { // else it just displays empty screen
-			Log.d(LOG_TAG,
-					"setUiToStoryData + storyData:" + storyData.toString());
-			titleTV.setText(String.valueOf(storyData.title).toString());
-			bodyTV.setText(String.valueOf(storyData.body).toString());
-			
-			String audioLinkPath = String.valueOf(storyData.audioLink).toString();
-			
-			// TODO - Set up audio to play back on click. For this part we can easily parse the audio
-			// as a ringtone and play it back as such. Use the RingtonManager function getRingtone on
-			// the audioLinkPath to create the ringtone
-			
-			final Ringtone ringtone = null;
-			
-			
-			audioButton.setOnClickListener(new OnClickListener() {
-				@Override
-				public void onClick(View v) {
-					
-					// TODO - Play the ringtone
-					
+    public void setUiToStoryData(long getUniqueKey) throws RemoteException {
+        Log.d(LOG_TAG, "setUiToStoryData");
+        storyData = resolver.getStoryDataViaRowID(getUniqueKey);
+        if (storyData == null) {
+            getView().setVisibility(View.GONE);
+        } else { // else it just displays empty screen
+            Log.d(LOG_TAG,
+                    "setUiToStoryData + storyData:" + storyData.toString());
+            titleTV.setText(String.valueOf(storyData.title).toString());
+            bodyTV.setText(String.valueOf(storyData.body).toString());
 
-					
-				}
-			});
-			
-			// Display the video 
-			
-			String videoLinkPath = String.valueOf(storyData.videoLink).toString();
+            String audioLinkPath = String.valueOf(storyData.audioLink).toString();
 
-			// Set up video playback using the MediaController android widget
-			// and the video view already set up in the layout file.
-			
-			// TODO - Create a new MediaController for this activity 
-		
+            // TODO - Set up audio to play back on click. For this part we can easily parse the audio
+            // as a ringtone and play it back as such. Use the RingtonManager function getRingtone on
+            // the audioLinkPath to create the ringtone
 
-			// TODO - The MediaController needs an anchorview. Anchor the Media Controller
-			// to the VideoView, videoLinkView, with the function setAnchorView()
-			
-			
-			
-			// TODO - Now the VideoView, videoLinkView, needs to have a Media Controller set to it
-			// use the setMediaController function from the VideoView to set it to the new Media Controller
-			
-			
-			// TODO - Now we need to set the URI for the VideoView, use the setVideoURI function on the
-			//  videoLinkPath string from before.
-			
-			
-			// TODO - Start the video, using the start function on the VideoView
-			
-			
-			// Display the image data
-			
-			imageNameTV.setText(String.valueOf(storyData.imageName).toString());
-			
-			String imageMetaDataPath = String.valueOf(storyData.imageLink).toString();
-			
-			// TODO - Set the URI of the ImageView to the image path stored in the string
-			// imageMetaDataPath, using the setImageURI function from the ImageView
-			
-			
-			
-			Long time = Long.valueOf(storyData.storyTime);
-			storyTimeTV.setText(StoryData.FORMAT.format(time));
-			
-			latitudeTV.setText(Double.valueOf(storyData.latitude).toString());
-			longitudeTV.setText(Double.valueOf(storyData.longitude).toString());
-		}
-	}
+            final Ringtone ringtone = null;
 
-	// action to be performed when the edit button is pressed
-	private void editButtonPressed() {
-		mOpener.openEditStoryFragment(storyData.KEY_ID);
-	}
 
-	// action to be performed when the delete button is pressed
-	private void deleteButtonPressed() {
-		String message;
+            audioButton.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-		message = getResources().getString(
-				R.string.story_view_deletion_dialog_message);
+                    // TODO - Play the ringtone
 
-		new AlertDialog.Builder(getActivity())
-				.setIcon(android.R.drawable.ic_dialog_alert)
-				.setTitle(R.string.story_view_deletion_dialog_title)
-				.setMessage(message)
-				.setPositiveButton(R.string.story_view_deletion_dialog_yes,
-						new DialogInterface.OnClickListener() {
-							@Override
-							public void onClick(DialogInterface dialog,
-									int which) {
-								try {
-									resolver.deleteAllStoryWithRowID(storyData.KEY_ID);
-								} catch (RemoteException e) {
-									Log.e(LOG_TAG, "RemoteException Caught => "
-											+ e.getMessage());
-									e.printStackTrace();
-								}
-								mOpener.openListStoryFragment();
-								if (getResources().getBoolean(R.bool.isTablet) == true) {
-									mOpener.openViewStoryFragment(-1);
-								} else {
-									getActivity().finish();
-								}
-							}
 
-						})
-				.setNegativeButton(R.string.story_view_deletion_dialog_no, null)
-				.show();
-	}
 
-	public long getUniqueKey() {
-		return getArguments().getLong(rowIdentifyerTAG, 0);
-	}
+                }
+            });
 
-	@Override
-	public void onDetach() {
-		super.onDetach();
-		mOpener = null;
-		resolver = null;
-	}
-	
-	@Override
-	public void onResume() {
-		super.onResume();
-		try {
-			setUiToStoryData(getUniqueKey());
-		} catch (RemoteException e) {
-			Toast.makeText(getActivity(),
-					"Error retrieving information from local data store.",
-					Toast.LENGTH_LONG).show();
-			Log.e(LOG_TAG, "Error getting Story data from C.P.");
-		}
-	}
+            // Display the video 
+
+            String videoLinkPath = String.valueOf(storyData.videoLink).toString();
+
+            // Set up video playback using the MediaController android widget
+            // and the video view already set up in the layout file.
+
+            // TODO - Create a new MediaController for this activity 
+
+
+            // TODO - The MediaController needs an anchorview. Anchor the Media Controller
+            // to the VideoView, videoLinkView, with the function setAnchorView()
+
+
+
+            // TODO - Now the VideoView, videoLinkView, needs to have a Media Controller set to it
+            // use the setMediaController function from the VideoView to set it to the new Media Controller
+
+
+            // TODO - Now we need to set the URI for the VideoView, use the setVideoURI function on the
+            //  videoLinkPath string from before.
+
+
+            // TODO - Start the video, using the start function on the VideoView
+
+
+            // Display the image data
+
+            imageNameTV.setText(String.valueOf(storyData.imageName).toString());
+
+            String imageMetaDataPath = String.valueOf(storyData.imageLink).toString();
+
+            // TODO - Set the URI of the ImageView to the image path stored in the string
+            // imageMetaDataPath, using the setImageURI function from the ImageView
+
+
+
+            Long time = Long.valueOf(storyData.storyTime);
+            storyTimeTV.setText(StoryData.FORMAT.format(time));
+
+            latitudeTV.setText(Double.valueOf(storyData.latitude).toString());
+            longitudeTV.setText(Double.valueOf(storyData.longitude).toString());
+        }
+    }
+
+    // action to be performed when the edit button is pressed
+    private void editButtonPressed() {
+        mOpener.openEditStoryFragment(storyData.KEY_ID);
+    }
+
+    // action to be performed when the delete button is pressed
+    private void deleteButtonPressed() {
+        String message;
+
+        message = getResources().getString(
+                R.string.story_view_deletion_dialog_message);
+
+        new AlertDialog.Builder(getActivity())
+        .setIcon(android.R.drawable.ic_dialog_alert)
+        .setTitle(R.string.story_view_deletion_dialog_title)
+        .setMessage(message)
+        .setPositiveButton(R.string.story_view_deletion_dialog_yes,
+                new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog,
+                    int which) {
+                try {
+                    resolver.deleteAllStoryWithRowID(storyData.KEY_ID);
+                } catch (RemoteException e) {
+                    Log.e(LOG_TAG, "RemoteException Caught => "
+                            + e.getMessage());
+                    e.printStackTrace();
+                }
+                mOpener.openListStoryFragment();
+                if (getResources().getBoolean(R.bool.isTablet) == true) {
+                    mOpener.openViewStoryFragment(-1);
+                } else {
+                    getActivity().finish();
+                }
+            }
+
+        })
+        .setNegativeButton(R.string.story_view_deletion_dialog_no, null)
+        .show();
+    }
+
+    public long getUniqueKey() {
+        return getArguments().getLong(rowIdentifyerTAG, 0);
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mOpener = null;
+        resolver = null;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        try {
+            setUiToStoryData(getUniqueKey());
+        } catch (RemoteException e) {
+            Toast.makeText(getActivity(),
+                    "Error retrieving information from local data store.",
+                    Toast.LENGTH_LONG).show();
+            Log.e(LOG_TAG, "Error getting Story data from C.P.");
+        }
+    }
 }
