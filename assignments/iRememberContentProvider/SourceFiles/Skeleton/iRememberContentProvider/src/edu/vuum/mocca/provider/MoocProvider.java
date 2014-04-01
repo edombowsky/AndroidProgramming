@@ -144,9 +144,8 @@ public class MoocProvider extends ContentProvider {
             final String[] projection, final String selection,
             final String[] selectionArgs, final String sortOrder) {
 
-        // TODO: Perform a query on the database with the given parameters
-    	
-    	return null;
+        // TODO DONE : Perform a query on the database with the given parameters
+        return mDB.query(tableName, projection, selection, selectionArgs, sortOrder);
     }
 
     @Override
@@ -258,7 +257,7 @@ public class MoocProvider extends ContentProvider {
             } catch (IOException ex) {
             }
         }
-            break;
+        break;
         default: {
             throw new UnsupportedOperationException("URI: " + uri
                     + " not supported.");

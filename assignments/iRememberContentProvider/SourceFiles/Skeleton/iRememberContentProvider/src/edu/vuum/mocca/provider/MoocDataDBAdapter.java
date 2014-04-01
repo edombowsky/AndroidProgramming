@@ -59,7 +59,7 @@ public class MoocDataDBAdapter {
     private static final String DATABASE_CREATE_STORY = "create table "
             + DATABASE_TABLE_STORY + " (" // start table
             + Story_KEY_ID + " integer primary key autoincrement, " // setup
-                                                                    // auto-inc.
+            // auto-inc.
             // ST:tableCreateVariables:start
             + Story_LoginId + " INTEGER ," //
             + Story_StoryId + " INTEGER ," //
@@ -80,7 +80,7 @@ public class MoocDataDBAdapter {
     private static final String DATABASE_CREATE_TAGS = "create table "
             + DATABASE_TABLE_TAGS + " (" // start table
             + Tags_KEY_ID + " integer primary key autoincrement, " // setup
-                                                                   // auto-inc.
+            // auto-inc.
             // ST:tableCreateVariables:start
             + Tags_LoginId + " INTEGER ," //
             + Tags_StoryId + " INTEGER ," //
@@ -189,9 +189,8 @@ public class MoocDataDBAdapter {
             final String selection, final String[] selectionArgs,
             final String sortOrder) {
 
-        // TODO: Perform a query on the database with the given parameters
-        
-        return null;
+        // TODO DONE : Perform a query on the database with the given parameters
+        return db.query(table, projection, selection, selectionArgs, null, null, sortOrder);
     }
 
     /**
